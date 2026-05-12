@@ -1,4 +1,3 @@
-import SectionHeader from "@/components/SectionHeader";
 import FadeUp from "@/components/FadeUp";
 import { architectureLayers, architectureCards } from "@/lib/portfolio-data";
 import {
@@ -12,9 +11,9 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Integration Architecture — Saibhargav Karne",
+  title: "Architecture — Saibhargav Karne",
   description:
-    "Enterprise Dynamics 365 and Power Platform integration architecture — Dataverse, plugins, Power Automate, SAP, Azure Functions, and ALM.",
+    "Dynamics 365 and Power Platform integration architecture — Dataverse, plugins, Power Automate, SAP, Azure Functions, and ALM.",
 };
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -31,33 +30,30 @@ export default function ArchitecturePage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <FadeUp>
-        <SectionHeader
-          eyebrow="System Design"
-          title="Integration Architecture"
-          subtitle="End-to-end enterprise integration patterns connecting Power Platform, Dataverse, C# plugins, Power Automate, Azure, and external systems like SAP."
-        />
+        <div className="mb-12">
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Architecture</h1>
+          <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
+            The typical layers in a D365 / Power Platform project — how they connect and where
+            the complexity usually lives.
+          </p>
+        </div>
       </FadeUp>
 
       {/* Stack diagram */}
       <FadeUp delay={0.05}>
         <div className="mb-16">
-          <p className="text-gray-500 text-xs font-semibold uppercase tracking-wide mb-6">
-            Standard Enterprise Stack
+          <p className="text-gray-600 text-xs font-medium uppercase tracking-wide mb-6">
+            Standard stack
           </p>
           <div className="relative max-w-2xl">
             {architectureLayers.map((layer, i) => (
               <div key={layer.label} className="relative flex items-start gap-4 mb-0">
-                {/* Connector line */}
                 {i < architectureLayers.length - 1 && (
                   <div className="absolute left-5 top-10 w-px h-8 bg-gradient-to-b from-[#2563EB]/40 to-[#06B6D4]/20" />
                 )}
-
-                {/* Icon */}
                 <div className="w-10 h-10 rounded-xl bg-[#111827] border border-[#1E293B] flex items-center justify-center text-[#06B6D4] shrink-0 mt-1">
                   {iconMap[layer.icon]}
                 </div>
-
-                {/* Content */}
                 <div className="bg-[#111827] border border-[#1E293B] rounded-xl px-4 py-3 flex-1 mb-3 hover:border-[#2563EB]/30 transition-colors">
                   <p className="text-white font-semibold text-sm">{layer.label}</p>
                   <p className="text-gray-400 text-xs mt-0.5">{layer.description}</p>
@@ -68,11 +64,9 @@ export default function ArchitecturePage() {
         </div>
       </FadeUp>
 
-      {/* Architecture cards */}
+      {/* Architecture patterns */}
       <FadeUp>
-        <p className="text-[#06B6D4] text-sm font-semibold tracking-widest uppercase mb-6">
-          Architecture Patterns
-        </p>
+        <h2 className="text-lg font-semibold text-white mb-6">Patterns</h2>
       </FadeUp>
       <div className="grid md:grid-cols-2 gap-5">
         {architectureCards.map((card, i) => (
@@ -84,7 +78,7 @@ export default function ArchitecturePage() {
                 {card.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="px-2 py-0.5 bg-[#0B1220] border border-[#1E293B] rounded text-gray-400 text-xs"
+                    className="px-2 py-0.5 bg-[#0B1220] border border-[#1E293B] rounded text-gray-500 text-xs"
                   >
                     {tag}
                   </span>

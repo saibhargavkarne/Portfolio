@@ -1,4 +1,3 @@
-import SectionHeader from "@/components/SectionHeader";
 import FlowCard from "@/components/FlowCard";
 import FadeUp from "@/components/FadeUp";
 import { flows } from "@/lib/portfolio-data";
@@ -6,18 +5,22 @@ import { flows } from "@/lib/portfolio-data";
 export const metadata = {
   title: "Power Automate Flows — Saibhargav Karne",
   description:
-    "Enterprise Power Automate cloud flows — multi-level approvals, SAP writeback, SLA escalation, and error-handling patterns.",
+    "Power Automate cloud flows — multi-level approvals, SAP writeback, SLA escalation, and error-handling patterns.",
 };
 
 export default function AutomationsPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <FadeUp>
-        <SectionHeader
-          eyebrow="Workflow Engineering"
-          title="Automation & Power Automate Flows"
-          subtitle="Enterprise-grade Power Automate cloud flows designed with reliability-first patterns — scopes, try/catch/finally, retry policies, concurrency control, and error audit logging."
-        />
+        <div className="mb-12">
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            Automation &amp; Power Automate
+          </h1>
+          <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
+            Flows I&apos;ve built — multi-level approvals, SAP writebacks, escalation logic, and
+            document processing. Each one has proper error handling, not just the happy path.
+          </p>
+        </div>
       </FadeUp>
 
       <div className="grid md:grid-cols-2 gap-5 mb-16">
@@ -31,11 +34,8 @@ export default function AutomationsPage() {
       {/* Reliability patterns */}
       <FadeUp>
         <div className="bg-[#111827] border border-[#1E293B] rounded-2xl p-8">
-          <p className="text-[#06B6D4] text-sm font-semibold tracking-widest uppercase mb-3">
-            Engineering Discipline
-          </p>
-          <h2 className="text-xl font-bold text-white mb-6">
-            Reliability Patterns Applied Across All Flows
+          <h2 className="text-base font-semibold text-white mb-5">
+            Reliability patterns I use across every flow
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[

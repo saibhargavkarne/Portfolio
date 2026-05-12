@@ -9,6 +9,7 @@ import { navLinks } from "@/lib/portfolio-data";
 export default function Navigation() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [imgError, setImgError] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -32,11 +33,22 @@ export default function Navigation() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-[#2563EB] flex items-center justify-center text-white font-bold text-sm group-hover:bg-[#06B6D4] transition-colors">
-              SK
+          <Link href="/" className="flex items-center gap-2.5 group">
+            <div className="w-8 h-8 rounded-full overflow-hidden border border-white/10 shrink-0">
+              {!imgError ? (
+                <img
+                  src="/profile.jpg"
+                  alt="Saibhargav Karne"
+                  className="w-full h-full object-cover object-top"
+                  onError={() => setImgError(true)}
+                />
+              ) : (
+                <div className="w-full h-full bg-[#2563EB] flex items-center justify-center text-white font-bold text-xs">
+                  SK
+                </div>
+              )}
             </div>
-            <span className="hidden sm:block text-white font-semibold text-sm tracking-wide">
+            <span className="hidden sm:block text-white font-semibold text-sm">
               Saibhargav Karne
             </span>
           </Link>
@@ -49,7 +61,7 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                  className={`px-3 py-1.5 rounded-md text-sm transition-colors ${
                     active
                       ? "text-[#06B6D4] bg-[#06B6D4]/10"
                       : "text-gray-400 hover:text-white hover:bg-white/5"
@@ -67,7 +79,7 @@ export default function Navigation() {
               href="/contact"
               className="px-4 py-2 text-sm font-medium bg-[#2563EB] text-white rounded-lg hover:bg-[#1D4ED8] transition-colors"
             >
-              Hire Me
+              Contact
             </Link>
           </div>
 
@@ -90,7 +102,7 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`block px-4 py-2.5 rounded-md text-sm font-medium transition-colors ${
+                  className={`block px-4 py-2.5 rounded-md text-sm transition-colors ${
                     active
                       ? "text-[#06B6D4] bg-[#06B6D4]/10"
                       : "text-gray-400 hover:text-white hover:bg-white/5"
@@ -105,7 +117,7 @@ export default function Navigation() {
                 href="/contact"
                 className="block text-center px-4 py-2.5 text-sm font-medium bg-[#2563EB] text-white rounded-lg hover:bg-[#1D4ED8] transition-colors"
               >
-                Hire Me
+                Contact
               </Link>
             </div>
           </div>

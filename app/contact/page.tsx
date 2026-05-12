@@ -6,7 +6,7 @@ import { LinkedInIcon } from "@/components/SocialIcons";
 export const metadata = {
   title: "Contact — Saibhargav Karne",
   description:
-    "Get in touch with Saibhargav Karne for Dynamics 365, Power Platform, Power Automate, and enterprise automation opportunities.",
+    "Get in touch with Saibhargav Karne for Dynamics 365, Power Platform, and enterprise automation opportunities.",
 };
 
 export default function ContactPage() {
@@ -14,16 +14,10 @@ export default function ContactPage() {
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <FadeUp>
         <div className="mb-12">
-          <p className="text-[#06B6D4] text-sm font-semibold tracking-widest uppercase mb-2">
-            Get in Touch
-          </p>
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Let&apos;s Build Enterprise-Grade D365 Solutions
-          </h1>
-          <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-            Available for Dynamics 365 CE, Power Apps, Power Automate, Dataverse, plugin
-            development, SAP integration, and enterprise automation roles and consulting
-            engagements.
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Let&apos;s talk</h1>
+          <p className="text-gray-400 text-lg max-w-xl leading-relaxed">
+            I&apos;m based in Dallas and open to remote work. Looking for a D365 or Power Platform
+            developer for a role or project? Reach out.
           </p>
         </div>
       </FadeUp>
@@ -31,17 +25,17 @@ export default function ContactPage() {
       <div className="grid lg:grid-cols-2 gap-8">
         {/* Contact cards */}
         <FadeUp>
-          <div className="space-y-4">
+          <div className="space-y-3">
             <a
               href={`mailto:${contact.email}`}
               className="flex items-center gap-4 bg-[#111827] border border-[#1E293B] rounded-2xl p-5 hover:border-[#2563EB]/40 transition-all duration-300 group"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#2563EB]/10 border border-[#2563EB]/20 flex items-center justify-center shrink-0">
-                <Mail size={20} className="text-[#2563EB]" />
+              <div className="w-10 h-10 rounded-xl bg-[#2563EB]/10 border border-[#2563EB]/20 flex items-center justify-center shrink-0">
+                <Mail size={18} className="text-[#2563EB]" />
               </div>
               <div>
-                <p className="text-gray-400 text-xs uppercase tracking-wide mb-0.5">Email</p>
-                <p className="text-white font-medium group-hover:text-[#06B6D4] transition-colors">
+                <p className="text-gray-500 text-xs mb-0.5">Email</p>
+                <p className="text-white text-sm group-hover:text-[#06B6D4] transition-colors">
                   {contact.email}
                 </p>
               </div>
@@ -53,34 +47,34 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="flex items-center gap-4 bg-[#111827] border border-[#1E293B] rounded-2xl p-5 hover:border-[#06B6D4]/40 transition-all duration-300 group"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#06B6D4]/10 border border-[#06B6D4]/20 flex items-center justify-center shrink-0">
-                <LinkedInIcon size={20} className="text-[#06B6D4]" />
+              <div className="w-10 h-10 rounded-xl bg-[#06B6D4]/10 border border-[#06B6D4]/20 flex items-center justify-center shrink-0">
+                <LinkedInIcon size={18} className="text-[#06B6D4]" />
               </div>
               <div>
-                <p className="text-gray-400 text-xs uppercase tracking-wide mb-0.5">LinkedIn</p>
-                <p className="text-white font-medium group-hover:text-[#06B6D4] transition-colors">
+                <p className="text-gray-500 text-xs mb-0.5">LinkedIn</p>
+                <p className="text-white text-sm group-hover:text-[#06B6D4] transition-colors">
                   linkedin.com/in/sbkarne
                 </p>
               </div>
             </a>
 
             <div className="flex items-center gap-4 bg-[#111827] border border-[#1E293B] rounded-2xl p-5">
-              <div className="w-12 h-12 rounded-xl bg-white/5 border border-[#1E293B] flex items-center justify-center shrink-0">
-                <MapPin size={20} className="text-gray-400" />
+              <div className="w-10 h-10 rounded-xl bg-white/5 border border-[#1E293B] flex items-center justify-center shrink-0">
+                <Phone size={18} className="text-gray-500" />
               </div>
               <div>
-                <p className="text-gray-400 text-xs uppercase tracking-wide mb-0.5">Location</p>
-                <p className="text-white font-medium">{contact.location}</p>
+                <p className="text-gray-500 text-xs mb-0.5">Phone</p>
+                <p className="text-white text-sm">{contact.phone}</p>
               </div>
             </div>
 
             <div className="flex items-center gap-4 bg-[#111827] border border-[#1E293B] rounded-2xl p-5">
-              <div className="w-12 h-12 rounded-xl bg-white/5 border border-[#1E293B] flex items-center justify-center shrink-0">
-                <Phone size={20} className="text-gray-400" />
+              <div className="w-10 h-10 rounded-xl bg-white/5 border border-[#1E293B] flex items-center justify-center shrink-0">
+                <MapPin size={18} className="text-gray-500" />
               </div>
               <div>
-                <p className="text-gray-400 text-xs uppercase tracking-wide mb-0.5">Phone</p>
-                <p className="text-white font-medium">{contact.phone}</p>
+                <p className="text-gray-500 text-xs mb-0.5">Location</p>
+                <p className="text-white text-sm">{contact.location}</p>
               </div>
             </div>
           </div>
@@ -89,16 +83,13 @@ export default function ContactPage() {
         {/* Right panel */}
         <FadeUp delay={0.1}>
           <div className="space-y-5">
-            {/* Available for */}
             <div className="bg-[#111827] border border-[#1E293B] rounded-2xl p-6">
-              <p className="text-[#06B6D4] text-xs font-semibold uppercase tracking-wide mb-4">
-                Available For
-              </p>
+              <p className="text-gray-400 text-sm font-medium mb-4">Open to</p>
               <ul className="space-y-2.5">
                 {[
                   "Senior Dynamics 365 Developer roles",
                   "Power Platform Developer positions",
-                  "Enterprise Power Automate consulting",
+                  "Power Automate consulting",
                   "Dataverse / C# Plugin engineering",
                   "SAP & Azure integration projects",
                   "ALM / DevOps for Power Platform",
@@ -112,19 +103,18 @@ export default function ContactPage() {
               </ul>
             </div>
 
-            {/* Resume download */}
-            <div className="bg-gradient-to-r from-[#2563EB]/15 to-[#06B6D4]/15 border border-[#2563EB]/20 rounded-2xl p-6">
-              <p className="text-white font-semibold mb-2">Download Resume</p>
-              <p className="text-gray-400 text-sm mb-4">
-                Full resume with detailed project breakdowns and certifications.
+            <div className="bg-[#111827] border border-[#1E293B] rounded-2xl p-6">
+              <p className="text-white font-medium text-sm mb-1">Resume</p>
+              <p className="text-gray-500 text-sm mb-4">
+                PDF with full project breakdowns and certifications.
               </p>
               <a
                 href={RESUME_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 bg-[#2563EB] text-white rounded-lg font-medium text-sm hover:bg-[#1D4ED8] transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-[#2563EB] text-white rounded-lg font-medium text-sm hover:bg-[#1D4ED8] transition-colors"
               >
-                <Download size={15} />
+                <Download size={14} />
                 Download PDF
               </a>
             </div>
