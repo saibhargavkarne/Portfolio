@@ -12,7 +12,7 @@ const geist = Geist({
 export const metadata: Metadata = {
   title: "Saibhargav Karne — Dynamics 365 & Power Platform Developer",
   description:
-    "Enterprise Dynamics 365 CE and Power Platform developer with 5+ years of experience in C# plugins, Power Apps, Power Automate, Dataverse, SAP integration, and ALM.",
+    "Senior Dynamics 365 CE and Power Platform engineer with 9+ years of experience in C# plugins, PCF controls, Power Apps, Power Automate, Dataverse, Azure integrations, and ALM.",
   keywords: [
     "Dynamics 365 Developer",
     "Power Platform Developer",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Saibhargav Karne — Enterprise Dynamics 365 & Power Platform Developer",
     description:
-      "5+ years delivering enterprise D365 CE, Power Apps, Power Automate, C# plugins, SAP integration, and ALM across Kraft Heinz and Microsoft.",
+      "9+ years delivering D365 CE, Power Apps, Power Automate, C# plugins, PCF controls, Azure integrations, and ALM across Microsoft, C&S Wholesale, Sun Powered, and Deloitte.",
     type: "website",
     locale: "en_US",
   },

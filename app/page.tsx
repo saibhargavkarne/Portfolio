@@ -42,7 +42,7 @@ export default function Home() {
 
           <FadeUp delay={0.15}>
             <p className="text-gray-500 text-base max-w-xl leading-relaxed mb-10">
-              Five years in. The part I enjoy most is the architecture — getting the data model and
+              Nine years in. The part I enjoy most is the architecture — getting the data model and
               plugin layer right before the canvas app is even opened.
             </p>
           </FadeUp>
@@ -116,9 +116,9 @@ export default function Home() {
             <div>
               <h2 className="text-2xl font-bold text-white mb-6">How I work</h2>
               <p className="text-gray-400 leading-relaxed mb-4">
-                I&apos;m a D365 and Power Platform developer based in Dallas. Five years across
+                I&apos;m a D365 and Power Platform developer based in Dallas. Nine years across
                 manufacturing, retail, financial services, and consulting — most of it on
-                Dataverse-heavy projects with complex approval workflows and SAP integrations.
+                Dataverse-heavy projects with complex approval workflows and integrations.
               </p>
               <p className="text-gray-400 leading-relaxed mb-4">
                 The projects I find most interesting sit at the intersection of Dataverse
