@@ -10,7 +10,7 @@ export const contact = {
 };
 
 export const metrics = [
-  { value: "9+", label: "Years Experience" },
+  { value: "5+", label: "Years Experience" },
   { value: "30+", label: "Plants Supported in PO Management" },
   { value: "200+", label: "Active Retail Operations Users" },
   { value: "$1M+", label: "Quarterly Cost Savings via Automation" },
