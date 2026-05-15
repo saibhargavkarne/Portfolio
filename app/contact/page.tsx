@@ -53,7 +53,7 @@ export default function ContactPage() {
               <div>
                 <p className="text-gray-500 text-xs mb-0.5">LinkedIn</p>
                 <p className="text-white text-sm group-hover:text-[#06B6D4] transition-colors">
-                  linkedin.com/in/sbkarne
+                  linkedin.com/in/bhargav-k-217b222b3
                 </p>
               </div>
             </a>

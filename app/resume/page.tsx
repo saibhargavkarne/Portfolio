@@ -42,7 +42,7 @@ export default function ResumePage() {
               className="flex items-center gap-2 text-gray-400 text-sm hover:text-[#06B6D4] transition-colors"
             >
               <LinkedInIcon size={14} className="text-[#06B6D4]" />
-              linkedin.com/in/sbkarne
+              linkedin.com/in/bhargav-k-217b222b3
             </a>
           </div>
 

@@ -5,7 +5,7 @@ export const contact = {
   email: "saibhargav5088@gmail.com",
   phone: "(469) 666-7274",
   location: "Dallas, Texas",
-  linkedin: "https://www.linkedin.com/in/sbkarne/",
+  linkedin: "https://www.linkedin.com/in/bhargav-k-217b222b3/",
   github: "https://github.com/saibhargavkarne",
 };
 
